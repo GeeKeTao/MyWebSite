@@ -810,6 +810,7 @@ aside.left-panel {
 
 /* Right panel */
 .right-panel {
+	flex: 1;
   background: #f1f2f7;
   margin-left: 280px;
   margin-top: 55px; }
@@ -1725,7 +1726,7 @@ header .form-inline {
 .login-form {
   background: #ffffff;
   padding: 30px 30px 20px;
-  border-radius: 10px; }
+  border-radius: 2px; }
 
 .login-form h4 {
   color: #878787;
