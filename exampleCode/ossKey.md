@@ -1,0 +1,4 @@
+用户登录名称 geekt@1138406676531567.onaliyun.com
+登录密码 cktNSCQ705825
+AccessKey ID LTAI4FiaC7EmT5PsCG2bL2zi
+AccessKeySecret englgBFOnRUfe8dAIS7bAjGWGzKNZs

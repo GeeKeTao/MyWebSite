@@ -16,10 +16,10 @@ import oss2
 #   http://oss-cn-hangzhou.aliyuncs.com
 #   https://oss-cn-hangzhou.aliyuncs.com
 # 分别以HTTP、HTTPS协议访问。
-access_key_id = os.getenv('OSS_TEST_ACCESS_KEY_ID', '<你的AccessKeyId>')
-access_key_secret = os.getenv('OSS_TEST_ACCESS_KEY_SECRET', '<你的AccessKeySecret>')
-bucket_name = os.getenv('OSS_TEST_BUCKET', '<你的Bucket>')
-endpoint = os.getenv('OSS_TEST_ENDPOINT', '<你的访问域名>')
+access_key_id = os.getenv('OSS_TEST_ACCESS_KEY_ID', 'LTAI4FjGMtFNSTY7ab4FGTCF')
+access_key_secret = os.getenv('OSS_TEST_ACCESS_KEY_SECRET', 'gMDznxZTSGQrMgkY62vgYvaARcTFly')
+bucket_name = os.getenv('OSS_TEST_BUCKET', 'geekt-buket')
+endpoint = os.getenv('OSS_TEST_ENDPOINT', 'http://oss-cn-beijing.aliyuncs.com')
 
 
 # 确认上面的参数都填写正确了
@@ -30,15 +30,16 @@ for param in (access_key_id, access_key_secret, bucket_name, endpoint):
 # 创建Bucket对象，所有Object相关的接口都可以通过Bucket对象来进行
 bucket = oss2.Bucket(oss2.Auth(access_key_id, access_key_secret), endpoint, bucket_name)
 
+print('bucket: ', bucket)
 
 # 上传一段字符串。Object名是motto.txt，内容是一段名言。
 bucket.put_object('motto.txt', 'Never give up. - Jack Ma')
 
 # 获取Object的metadata
-object_meta = bucket.get_object_meta('你的对象名')
-print('last modified: ' + object_meta.last_modified)
+object_meta = bucket.get_object_meta('motto.txt')
+print('last modified: ' + str(object_meta.last_modified))
 print('etag: ' + object_meta.etag)
-print('size: ' + object_meta.content_length)
+print('size: ' + str(object_meta.content_length))
 
 # 下载到本地文件
 bucket.get_object_to_file('motto.txt', '本地文件名.txt')
