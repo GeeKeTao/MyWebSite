@@ -9,3 +9,4 @@ admin = Blueprint('admin', __name__)
 
 from app.admin.views.main import *
 from app.admin.views.logs import *
+from app.admin.views.user import *

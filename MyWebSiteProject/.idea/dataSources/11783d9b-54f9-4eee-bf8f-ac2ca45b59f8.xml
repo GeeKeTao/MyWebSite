@@ -1084,13 +1084,13 @@
       <DataType>varchar(50)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="270" parent="236" name="admin_id">
+    <column id="270" parent="236" name="admin_name">
       <Position>6</Position>
-      <DataType>int(11)|0s</DataType>
+      <DataType>varchar(40)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="271" parent="236" name="admin_id">
-      <ColNames>admin_id</ColNames>
+    <index id="271" parent="236" name="admin_name">
+      <ColNames>admin_name</ColNames>
       <Type>btree</Type>
     </index>
     <key id="272" parent="236" name="PRIMARY">

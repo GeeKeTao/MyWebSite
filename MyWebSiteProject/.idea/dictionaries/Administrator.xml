@@ -11,11 +11,14 @@
       <w>initdb</w>
       <w>modifytime</w>
       <w>mysqlconnector</w>
+      <w>newpassword</w>
       <w>rmvb</w>
       <w>sqlalchemy</w>
       <w>systemkey</w>
       <w>systemval</w>
       <w>tablename</w>
+      <w>udata</w>
+      <w>uimg</w>
       <w>userid</w>
     </words>
   </dictionary>

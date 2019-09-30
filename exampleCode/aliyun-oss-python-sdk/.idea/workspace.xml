@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5be9b4ee-5a98-43e9-9b38-acf1a6530d9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/examples/object_basic.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/object_basic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MyWebSiteProject/app/admin/forms/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MyWebSiteProject/app/admin/views/user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MyWebSiteProject/app/templates/admin/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MyWebSiteProject/app/templates/admin/user_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyWebSiteProject/.idea/dataSources/11783d9b-54f9-4eee-bf8f-ac2ca45b59f8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyWebSiteProject/.idea/dataSources/11783d9b-54f9-4eee-bf8f-ac2ca45b59f8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyWebSiteProject/.idea/dictionaries/Administrator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyWebSiteProject/.idea/dictionaries/Administrator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyWebSiteProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyWebSiteProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyWebSiteProject/app/admin/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyWebSiteProject/app/admin/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyWebSiteProject/app/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyWebSiteProject/app/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyWebSiteProject/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyWebSiteProject/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyWebSiteProject/app/static/admin/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyWebSiteProject/app/static/admin/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyWebSiteProject/app/templates/admin/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyWebSiteProject/app/templates/admin/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MyWebSiteProject/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../MyWebSiteProject/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Template/后台模板/adminTemplate/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../Template/后台模板/adminTemplate/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Template/后台模板/adminTemplate/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Template/后台模板/adminTemplate/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build/lib/oss2/api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="629" column="39" lean-forward="true" selection-start-line="629" selection-start-column="39" selection-end-line="629" selection-end-column="39" />
+            <state relative-caret-position="11609">
+              <caret line="629" column="39" selection-start-line="629" selection-start-column="39" selection-end-line="629" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -29,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/oss2/api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="627" column="13" lean-forward="true" selection-start-line="627" selection-start-column="13" selection-end-line="627" selection-end-column="13" />
+            <state relative-caret-position="11571">
+              <caret line="627" column="13" selection-start-line="627" selection-start-column="13" selection-end-line="627" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -38,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/upload.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+            <state relative-caret-position="1729">
+              <caret line="94" selection-start-line="94" selection-end-line="94" />
             </state>
           </provider>
         </entry>
@@ -47,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/image.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="43" column="8" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+            <state relative-caret-position="722">
+              <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -56,8 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/bucket_policy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="35" column="43" lean-forward="true" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+            <state relative-caret-position="627">
+              <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -65,8 +80,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/bucket_website.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-19">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="494">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -79,8 +94,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/object_callback.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+            <state relative-caret-position="1083">
+              <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -88,8 +103,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/examples/object_progress.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-57">
-              <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+            <state relative-caret-position="19">
+              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -125,26 +140,12 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="aliyun-oss-python-sdk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aliyun-oss-python-sdk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aliyun-oss-python-sdk" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aliyun-oss-python-sdk" type="462c0819:PsiDirectoryNode" />
-              <item name="examples" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../MyWebSiteProject" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -248,22 +249,24 @@
       <updated>1569486401590</updated>
       <workItem from="1569486403017" duration="405000" />
       <workItem from="1569545524032" duration="8847000" />
+      <workItem from="1569717792631" duration="1316000" />
+      <workItem from="1569803800929" duration="619000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9252000" />
+    <option name="totallyTimeSpent" value="11187000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" weight="0.32952183" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32952183" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32952183" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991684" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -274,6 +277,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32952183" />
       <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32952183" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -385,63 +389,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build/lib/oss2/api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="629" column="39" lean-forward="true" selection-start-line="629" selection-start-column="39" selection-end-line="629" selection-end-column="39" />
+        <state relative-caret-position="11609">
+          <caret line="629" column="39" selection-start-line="629" selection-start-column="39" selection-end-line="629" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/oss2/api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="627" column="13" lean-forward="true" selection-start-line="627" selection-start-column="13" selection-end-line="627" selection-end-column="13" />
+        <state relative-caret-position="11571">
+          <caret line="627" column="13" selection-start-line="627" selection-start-column="13" selection-end-line="627" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/upload.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+        <state relative-caret-position="1729">
+          <caret line="94" selection-start-line="94" selection-end-line="94" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/image.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="43" column="8" lean-forward="true" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+        <state relative-caret-position="722">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/bucket_policy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="35" column="43" lean-forward="true" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
+        <state relative-caret-position="627">
+          <caret line="35" column="43" selection-start-line="35" selection-start-column="43" selection-end-line="35" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/examples/bucket_website.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="494">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/oss2/auth.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/object_check.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/examples/object_callback.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="61" column="9" lean-forward="true" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+        <state relative-caret-position="1083">
+          <caret line="61" column="9" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/examples/object_check.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/examples/object_progress.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-57">
-          <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+        <state relative-caret-position="19">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
         </state>
       </provider>
     </entry>

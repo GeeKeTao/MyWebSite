@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
+<html class="no-js" lang="" style="height: 100%;">
 	<!--<![endif]-->
 
 	<head>
@@ -34,7 +34,7 @@
         {% endblock %}
 	</head>
 
-	<body>
+	<body style="height: 100%;">
 		<!-- Left Panel Start-->
 		<aside id="left-panel" class="left-panel">
 			<nav class="navbar navbar-expand-sm navbar-default">
@@ -148,7 +148,7 @@
 									<a href="{{ url_for('admin.index') }}">系统参数</a>
 								</li>
 								<li><i class="fa fa-id-badge"></i>
-									<a href="{{ url_for('admin.index') }}">管理员</a>
+									<a href="{{ url_for('admin.user') }}">管理员</a>
 								</li>
                                 <li><i class="fa fa-id-badge"></i>
 									<a href="{{ url_for('admin.index') }}">角色管理</a>

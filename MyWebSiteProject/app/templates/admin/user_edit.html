@@ -1,0 +1,84 @@
+{% extends 'admin/base.html' %}
+
+{% block title %} 编辑管理员 {% endblock %}
+
+{% block content %}
+<!--Admin Edit Start-->
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="card">
+            <div class="card-header">
+                <strong class="card-title">编辑管理员</strong>
+            </div>
+            <div class="card-body edit-admin">
+                <div class="row">
+                    <div class="edit-admin-l col-lg-4">
+                        <div class="edit-admin-img-box">
+                            <img src="/static/admin/images/admin.jpg"/>
+                            <button type="button" class="btn btn-outline-success btn-sm"><i class="fa fa-magic"></i>&nbsp; 更换头像</button>
+                        </div>
+                    </div>
+                    <div class="edit-admin-r col-lg-8">
+                        <form action="" method="post" class="form-horizontal">
+                            {{ form['form'].csrf_token }}
+                            <div class="row form-group">
+                                <div class="edit-flable col col-md-3"><label for="text-input" class=" form-control-label">{{ form['form'].username.label }}</label></div>
+                                <div class="col-12 col-md-9">
+                                    {{ form['form'].username }}
+
+                                    {% if form['form'].username.errors[0] %}
+                                        <small class="form-text text-muted" style="color: #e83e8c !important;">{{ form['form'].username.errors[0] }}</small>
+                                    {% else %}
+                                        <small class="form-text text-muted">管理员登录名称</small>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="edit-flable col col-md-3"><label for="" class=" form-control-label">{{ form['form'].phone.label }}</label></div>
+                                <div class="col-12 col-md-9">
+                                    {{ form['form'].phone }}
+
+                                    {% if form['form'].phone.errors[0] %}
+                                        <small class="form-text text-muted" style="color: #e83e8c !important;">{{ form['form'].phone.errors[0] }}</small>
+                                    {% else %}
+                                        <small class="form-text text-muted">联系电话</small>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="edit-flable col col-md-3"><label for="password-input" class=" form-control-label">{{ form['form'].newpassword.label }}</label></div>
+                                <div class="col-12 col-md-9">
+                                    {{ form['form'].newpassword }}
+                                    <small class="form-text text-muted">登录密码</small>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="edit-flable col col-md-3"><label for="password-input" class=" form-control-label">{{ form['form'].newpassword2.label }}</label></div>
+                                <div class="col-12 col-md-9">
+                                    {{ form['form'].newpassword2 }}
+
+                                    {% if form['form'].newpassword2.errors[0] %}
+                                        <small class="form-text text-muted" style="color: #e83e8c !important;">{{ form['form'].newpassword2.errors[0] }}</small>
+                                    {% else %}
+                                        <small class="form-text text-muted">确认密码</small>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 edit-submit">
+                                    <div class="form-actions buttons">
+                                        {{ form['form'].submit }}
+                                        <button type="button" class="btn btn-secondary edit-admin-cancle"><a href="{{ url_for('admin.user') }}">取消</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- .card -->
+
+    </div><!--/.col-->
+</div>
+<!--Admin Edit End-->
+{% endblock %}

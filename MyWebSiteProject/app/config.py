@@ -5,10 +5,11 @@
 import os
 
 
-# 配置数据库
+# 配置数据库 *在创建数据库时请注意要将字符编码 charset 设置为 utf8/utf8mb4
 SQLALCHEMY_DATABASE_URI = "mysql+mysqlconnector://root@localhost:3306/geekt"  # mysql://username:password@server/db
 # SQLALCHEMY_ECHO = True
 SQLALCHEMY_TRACK_MODIFICATIONS = True
+SQLALCHEMY_NATIVE_UNICODE = 'utf8'
 
 # 文件存放位置
 
@@ -30,9 +31,9 @@ OSS_BUCKET_FOLDER = 'geektWebSite/'
 
 # 初始系统参数配置
 SYS_INIT_DATA = {
-    'defAdmin': 'geektadmin',  # 初始管理员名称
-    'defPwd': 'geektAdmin',  # 初始管理员密码
-    'defAdminImg': BASEDIR + '/static/admin/images/admin.jpg',  # 初始管理员头像
+    'defAdmin': 'GeekTaoAdmin',  # 初始管理员名称
+    'defPwd': 'GeekTaoAdmin',  # 初始管理员密码
+    'defAdminImg': '/static/admin/images/admin.jpg',  # 初始管理员头像
     'defFilePath': UP_DIR,  # 默认服务器文件存放地址
     'filePath': 'files/',  # 文件存放地址
     'imgPath': 'images/',  # 图片存放地址

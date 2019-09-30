@@ -16,7 +16,7 @@ def initdb():
     """初始化数据表"""
     db.drop_all()
     db.create_all()
-    u = Admin(name='geektadmin', password=generate_password_hash('geektadmin'), phone='17601478025', gender=True)
+    u = Admin(name=sysData['defAdmin'], password=generate_password_hash(sysData['defPwd']), phone='17601478025', gender=True)
     db.session.add(u)
     db.session.commit()
     initsys()
@@ -31,6 +31,7 @@ def initsys():
         db.session.add(sdata)
     db.session.commit()
     print("初始化系统配置成功......")
+
 
 @manager.command
 def createsuperuser():

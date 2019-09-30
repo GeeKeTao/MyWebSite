@@ -40,13 +40,12 @@ class Admin(db.Model):
 class AdminLog(db.Model):
     __tablename__ = table_prefix + 'admin_log'
     id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-    addtime = db.Column(db.DateTime, default=datetime.utcnow())  # 创建时间
+    addtime = db.Column(db.DateTime, default=datetime.now)  # 创建时间
     ip = db.Column(db.String(30))  # 登录IP
     area = db.Column(db.String(50))  # 登录所在位置
 
     # 关联管理员数据表
     admin_name = db.Column(db.String(40), db.ForeignKey(Admin.name))  # 管理员登录日志与管理员之间的关联
-
 
     def __repr__(self):
         return "<AdminLog %s>" % self.ip
@@ -56,13 +55,13 @@ class AdminLog(db.Model):
 class AdminOperationLog(db.Model):
     __tablename__ = table_prefix + 'admin_operation_log'
     id = db.Column(db.Integer, autoincrement=True, primary_key=True)
-    addtime = db.Column(db.DateTime, default=datetime.utcnow())  # 创建时间
+    addtime = db.Column(db.DateTime, default=datetime.now)  # 创建时间
     content = db.Column(db.String(80))  # 操作内容
     ip = db.Column(db.String(30))  # 登录IP
     area = db.Column(db.String(50))  # 登录所在位置
 
     # 关联管理员数据表
-    admin_id = db.Column(db.Integer, db.ForeignKey(Admin.id))  # 管理员操作日志与管理员之间的关联
+    admin_name = db.Column(db.String(40), db.ForeignKey(Admin.name))  # 管理员操作日志与管理员之间的关联
 
     def __repr__(self):
         return "<AdminOperationLog %s>" % self.ip

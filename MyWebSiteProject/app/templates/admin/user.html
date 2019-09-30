@@ -1,0 +1,82 @@
+{% extends 'admin/base.html' %}
+
+{% block title %} 管理员 {% endblock %}
+
+{% block content %}
+<!-- Admins Strat-->
+<div class="orders">
+    <div class="row">
+        <div class="col-xl-12">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="box-title">Admins </h4>
+                </div>
+                <div class="card-body--">
+                    <div class="table-stats order-table ov-h">
+                        <table class="table ">
+                            <thead>
+                                <tr>
+                                    <th class="serial">#</th>
+                                    <th class="avatar">Portrait</th>
+                                    <th>Id</th>
+                                    <th>Name</th>
+                                    <th>LastLog</th>
+                                    <th>LoginNum</th>
+                                    <th>Operation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for k in data %}
+                                <tr>
+                                    <td class="serial">{{ loop.index }}</td>
+                                    <td class="avatar">
+                                        <div class="round-img">
+                                            <a href="#"><img class="rounded-circle" src="{{ k.img }}" alt=""></a>
+                                        </div>
+                                    </td>
+                                    <td> {{ k.id }} </td>
+                                    <td> <span class="name">{{ k.name }}</span> </td>
+                                    <td> <span class="product">{{ k.lastLog }}</span> </td>
+                                    <td><span class="count">{{ k.logNum }}</span></td>
+                                    <td class="edit-admin-list">
+                                        <button type="button" class="btn btn-primary btn-sm"><a href="{{ url_for('admin.user') }}{{ k.id }}">编辑</a></button>
+                                        <button type="button" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteAlert{{ k.id }}">删除</button>
+{#                                        <button type="button" class="btn btn-danger btn-sm"><a href="{{ url_for('admin.deluser') }}{{ k.id }}">删除</a></button>#}
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.table-stats -->
+                </div>
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.col-lg-8 -->
+    </div>
+</div>
+
+{% for k in data %}
+<div class="modal fade" id="deleteAlert{{ k.id }}" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticModalLabel">删除管理员</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>请确认执行删除管理员 {{ k.name }}</p>
+            </div>
+            <div class="modal-footer edit-admin-list">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-danger"><a href="{{ url_for('admin.deluser') }}{{ k.id }}">删除</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+<!-- Admins End -->
+{% endblock %}
